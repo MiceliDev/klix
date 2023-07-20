@@ -1,17 +1,11 @@
 <template>
     <div>
-        <p>Comédia</p>
-        <GenreCategorias />
-        <p>Históricos</p>
-        <GenreCategorias />
-        <p>Clipes</p>
-        <GenreCategorias />
-        <p>Criminais</p>
-        <GenreCategorias />
-        <p>Cursos</p>
-        <GenreCategorias />
-        <p>Motivacionais</p>
-        <GenreCategorias />
+        <GenreCategorias genre="Comédia"/>
+        <GenreCategorias genre="Histórico"/>
+        <GenreCategorias genre="Clipes"/>
+        <GenreCategorias genre="Criminais"/>
+        <GenreCategorias genre="Cursos"/>
+        <GenreCategorias genre="Jogos"/>
 
     </div>
 </template>
@@ -24,7 +18,6 @@
         components :{
             GenreCategorias
         },
-        data
     }
 </script>
 
@@ -32,12 +25,4 @@
     div{
         width: 100vw;
     }
-
-    div p{
-    font-size: 2rem;
-    color: snow;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    padding: 5px;
-}
 </style>
