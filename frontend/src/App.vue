@@ -1,26 +1,42 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <MenuBar />
+    <TopoBar />
+    <BannerTop />
+    <MainContent />
+  </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopoBar from './components/TopoBar.vue'; //Importação do TopoBar
+import MenuBar from './components/MenuBar.vue'; //Importação do MenuBar
+import BannerTop from './components/BannerTop.vue'; //Importação do banner dinâmico
+import MainContent from  './components/MainContent.vue'; //Importação do Main junto as categoris de generos e seus conteúdos
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopoBar,
+    BannerTop,
+    MenuBar,
+    MainContent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    margin:0;
+    padding: 0;
+    background: #444141;
+  }
+
+
 </style>
